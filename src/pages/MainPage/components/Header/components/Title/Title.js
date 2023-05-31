@@ -1,3 +1,5 @@
+import "./style.css"
+
 export const Title = () => {
     return (
         <h2>
