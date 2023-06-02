@@ -1,0 +1,8 @@
+.wrapper .logo_img {
+  width: 15%;
+  display: flex;
+}
+.wrapper .logo_img .img {
+  width: 50%;
+  height: 50%;
+}/*# sourceMappingURL=style.css.map */

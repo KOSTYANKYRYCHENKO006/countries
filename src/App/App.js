@@ -1,11 +1,13 @@
-import { MainPage } from '../pages/MainPage/MainPage';
+import { CountriesPage } from '../pages/CountriesPage';
 
 import './App.css';
 
 export function App() {
   return (
     <div className="App">
-      <MainPage />
+      <div className='App-wrapper'>
+      <CountriesPage />
+      </div>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import {Header} from "./components/Header"
 
-export const MainPage = () => {
+export const CountriesPage = () => {
     return (
         <>
             <Header />
