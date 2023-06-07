@@ -1,10 +1,12 @@
+import { CountryList } from "./components/CountryList"
+
 import "./style.css"
 
-export const Body = () => {
+export const Body = ({countryList}) => {
     return (
         <>
-            <Search />
-            <CountryList />
+            {/* <Search /> */}
+            <CountryList countryList={countryList} />
         </>
     )
 }

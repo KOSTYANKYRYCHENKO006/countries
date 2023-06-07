@@ -1,1 +1,12 @@
-/*# sourceMappingURL=style.css.map */
+.refresher {
+  position: absolute;
+  left: 0;
+  border: none;
+  background-color: white;
+  transition: 0.75s;
+  font-size: 24px;
+  cursor: pointer;
+}
+.refresher:hover {
+  background-color: salmon;
+}/*# sourceMappingURL=style.css.map */

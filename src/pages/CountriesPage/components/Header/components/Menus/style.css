@@ -1,16 +1,4 @@
 .menu-tabs__container {
   display: flex;
   justify-content: space-evenly;
-}
-
-.menu-tab{
-  color: #fff;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 20px;
-  text-decoration: none;
-}
-
-.menu-tab:hover{
-  color: aqua;
-  transition: 0.3ms;
-}
+}/*# sourceMappingURL=style.css.map */
