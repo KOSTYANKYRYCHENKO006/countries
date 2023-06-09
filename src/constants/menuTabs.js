@@ -1,6 +1,6 @@
-export const menuTabs = ["Главная", "Страны", "О нас", "Контакты"];
+export const menuTabs = [["main", "Главная"], ["countries", "Страны"], ["aboutUs", "О нас"], ["contacts", "Контакты"]];
 
 
 
-  
+
 

@@ -1,4 +1,7 @@
 .menu-tabs__container{
     display: flex;
     justify-content: space-evenly;
+    .menu-tab{
+        cursor: pointer;
+    }
 }

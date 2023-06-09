@@ -1,8 +1,11 @@
+import "./style.css"
+
 export const Country = ({ currentCountry }) => {
     return (
-        <>
-            <h3>{currentCountry.name.common}</h3>
-            <div>area: {currentCountry.area}km</div>
-        </>
+        <div className="current-country__wrapper">
+            <div className="current-country__name">
+                {currentCountry.name.official}
+            </div>
+        </div>
     )
 }

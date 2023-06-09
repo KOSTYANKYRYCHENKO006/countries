@@ -8,7 +8,9 @@ import "./style.css"
 
 export const CountriesPage = () => {
 
-    const [response, setResponse] = useState();
+    const [currentTab, setCurrentTab] = useState("main")
+
+    const [response, setResponse] = useState([]);
 
     const getResponse = () => {
         sendRequest(setResponse)
@@ -19,8 +21,8 @@ export const CountriesPage = () => {
     return (
         <>
             <button className="refresher" onClick={getResponse}>Refresh</button>
-            <Header />
-            <Body countryList={response}/>
+            <Header setCurrentTab={setCurrentTab} />
+            <Body countryList={response} currentTab={currentTab} />
 
         </>
     )

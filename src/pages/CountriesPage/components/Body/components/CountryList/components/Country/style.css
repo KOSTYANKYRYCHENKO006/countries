@@ -1,0 +1,7 @@
+.current-country__wrapper {
+  width: 30%;
+  border: 1px solid red;
+}
+.current-country__wrapper .current-country__name {
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
