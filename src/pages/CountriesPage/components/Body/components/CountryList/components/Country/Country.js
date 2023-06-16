@@ -13,7 +13,7 @@ export const Country = ({ currentCountry }) => {
                Capital: {currentCountry.capital}
             </div>
             <div className="country_area">
-               Area: {currentCountry.area}
+               Area: {currentCountry.area} km
             </div>
             <div className="country_region">
                 Region: {currentCountry.region}
