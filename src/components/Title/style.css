@@ -39,12 +39,4 @@ button {
   right: 8px;
   background: #151515;
   cursor: pointer;
-}
-
-button:before {
-  content: "\f105";
-  font-family: FontAwesome;
-  color: #F9F0DA;
-  font-size: 20px;
-  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */

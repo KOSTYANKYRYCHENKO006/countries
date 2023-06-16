@@ -9,7 +9,7 @@ export const Title = () => {
                 <img className="img" src={logo} alt=""></img>
 
                 <div className="headerInfo">
-                    <h3 className="countriesHeader"><a className="title_href" href = "src/components/Title.js">Страны</a></h3>
+                    <h3 className="countriesHeader"><a className="title_href" href = "#">Страны</a></h3>
                     <p className="paragrapf_logo">Это веб-сайт про страны</p>
                 </div>
             </div>

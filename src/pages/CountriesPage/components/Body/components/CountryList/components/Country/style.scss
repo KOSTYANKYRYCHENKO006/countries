@@ -1,10 +1,21 @@
 .current-country__wrapper{
+    background-color: rgba(0, 0, 0, 0.19);
+    padding: 5px 10px;
+    color: white;
     margin-top: 15px;
-
     width: 30%;
     border: 1px solid red;
+    border-radius: 15px;
+    
+    .coutry_info{
+        margin-left: 5%;
+    }
     .current-country__name{
         text-align: center;
+        cursor: pointer;
+        &:hover{
+            color: rgb(228, 128, 166)
+        }
     }
 
     .country_flag{
