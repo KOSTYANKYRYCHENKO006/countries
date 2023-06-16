@@ -14,9 +14,15 @@ export const Title = () => {
                 </div>
             </div>
             <hr></hr>
+            <div className="div_search">
+                <form>
+                    <input type="text" 
+                    placeholder="Поиск...">
+                    </input>
+                    <button type="submit"></button>
+                </form>
+            </div>
         </div>
-
     )
 }
-
 

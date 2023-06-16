@@ -5,4 +5,34 @@
 }
 .current-country__wrapper .current-country__name {
   text-align: center;
+}
+.current-country__wrapper .country_flag {
+  width: 90%;
+  aspect-ratio: 3/2;
+  margin: 0 auto;
+  padding-top: 8px;
+}
+.current-country__wrapper .country_flag img {
+  width: 100%;
+  height: 100%;
+}
+.current-country__wrapper .current-country__name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  padding-top: 10px;
+}
+.current-country__wrapper .country_capital {
+  font-family: Times, serif;
+  font-size: 23px;
+  padding-top: 6px;
+}
+.current-country__wrapper .country_area {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 23px;
+  padding-top: 6px;
+}
+.current-country__wrapper .country_region {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 23px;
+  padding-top: 6px;
 }/*# sourceMappingURL=style.css.map */
