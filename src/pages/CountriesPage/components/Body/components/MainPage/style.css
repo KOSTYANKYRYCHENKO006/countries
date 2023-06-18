@@ -1,1 +1,30 @@
-/*# sourceMappingURL=style.css.map */
+.logo_text {
+  text-align: center;
+}
+.logo_text .text {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 12px;
+  width: 80%;
+  padding-left: 12px;
+  color: #fff;
+}
+.logo_text .text_btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #101010;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.logo_text .text_btn:hover {
+  background-color: #fff;
+  color: #101010;
+}
+
+.Information {
+  text-align: center;
+  padding-top: 90px;
+}/*# sourceMappingURL=style.css.map */

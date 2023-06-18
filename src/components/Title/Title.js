@@ -19,7 +19,7 @@ export const Title = () => {
                     <input type="text" 
                     placeholder="Поиск...">
                     </input>
-                    <button type="submit"></button>
+                    <button className="input_btn" type="submit"></button>
                 </form>
             </div>
         </div>
