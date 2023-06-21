@@ -3,6 +3,7 @@
   width: 85%;
 }
 .current-country .undo-btn {
+  cursor: pointer;
   position: absolute;
   height: 70vh;
   font-size: 35px;

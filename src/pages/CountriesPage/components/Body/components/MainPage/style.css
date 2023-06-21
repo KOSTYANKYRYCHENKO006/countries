@@ -1,3 +1,10 @@
+.main-page {
+  height: 76vh;
+  background-image: url("../../../../../../images/840px-Earth-planet-asteroid-sci-fi.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
 .logo_text {
   text-align: center;
 }
