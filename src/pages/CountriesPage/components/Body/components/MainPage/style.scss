@@ -29,4 +29,13 @@
 .Information{
     text-align: center;
     padding-top: 90px;
+    padding-left: 90px;
+    padding-right: 90px;
+
+    .Header{
+        background-color: #101010;
+        opacity: 0.5;
+        color: #fff;
+        height: 300px;
+    }
 }

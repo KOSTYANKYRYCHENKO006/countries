@@ -1,4 +1,3 @@
-
 import "./style.css"
 
 export const MainPage = () => {
@@ -15,8 +14,12 @@ export const MainPage = () => {
                 <div className="Information">
                     <div className="Header">
                     <h2>Новости про страны</h2>
+
+                    <div className="images">
+                    <img className="War" src="countries/src/images/1196983-635278-756x425.jpg" alt=""></img>
                     </div>
                 </div>
+            </div>
         </>
     )
 }
