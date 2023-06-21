@@ -1,3 +1,5 @@
+import image from "../../../../../../images/1196983-635278-756x425.jpg"
+
 import "./style.css"
 
 export const MainPage = () => {
@@ -11,12 +13,13 @@ export const MainPage = () => {
                 <button className="text_btn" type="text">На страницу Страны</button>
             </div>
 
-            <div className="Information">
-                <div className="Header">
+            <div className="information">
+                <div className="information__header">
                     <h2>Новости про страны</h2>
-
+                </div>
+                <div className="information__content">
                     <div className="images">
-                    <img className="War" src="countries/src/images/1196983-635278-756x425.jpg" alt=""></img>
+                        <img className="war" src={image} alt=""></img>
                     </div>
                 </div>
             </div>
