@@ -46,4 +46,8 @@
   width: 60%;
   height: 60%;
   cursor: pointer;
+}
+
+.sidebar_container {
+  display: inline-block;
 }/*# sourceMappingURL=style.css.map */
