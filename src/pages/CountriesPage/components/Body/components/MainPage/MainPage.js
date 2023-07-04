@@ -23,29 +23,29 @@ export const MainPage = () => {
                 </div>
                 <div className="information__content">
                     <div className="sidebar_container">
-                        <div className="info_ukraine">
+                        <div className="infos info_ukraine">
                             <img src={image} alt=""></img>
                             <p className="p_ukr">Война в Украине</p>
-                            
+                        </div>
 
-                            <div className="info_afganistan">
+                        <div className="infos info_afganistan">
                             <img src={afgan} alt=""></img>
                             <p className="p_afganistan">Что на даный момент происходит в Афганистане</p>
                         </div>
 
-                        <div className="info_siria">
+                        <div className="infos info_siria">
                             <img src={siria} alt=""></img>
                             <p className="p_siria">Гражданская война в Сирии</p>
                         </div>
 
-                        <div className="info_sudan">
+                        <div className="infos info_sudan">
                             <img src={sudan} alt=""></img>
                             <p className="p_sudan">О событиях в Судане</p>
                         </div>
+
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     )
 }

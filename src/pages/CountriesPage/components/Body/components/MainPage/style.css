@@ -39,11 +39,15 @@
   color: #fff;
 }
 
-.info_ukraine {
+.sidebar_container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.sidebar_container .infos {
   width: 20%;
 }
-.info_ukraine img {
-  width: 60%;
-  height: 60%;
+.sidebar_container img {
+  width: 100%;
+  aspect-ratio: 5/3;
   cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
