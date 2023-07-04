@@ -1,4 +1,8 @@
-import image from "../../../../../../images/1196983-635278-756x425.jpg"
+import image from "../../../../../../images/WarInUkraine.jpg"
+import afgan from "../../../../../../images/Afganistan.png"
+import siria from "../../../../../../images/Siria.png"
+import sudan from "../../../../../../images/Sudan.jpg"
+
 
 import "./style.css"
 
@@ -18,11 +22,30 @@ export const MainPage = () => {
                     <h2>Новости про страны</h2>
                 </div>
                 <div className="information__content">
-                    <div className="images">
-                        <img className="war" src={image} alt=""></img>
+                    <div className="sidebar_container">
+                        <div className="info_ukraine">
+                            <img src={image} alt=""></img>
+                            <p className="p_ukr">Война в Украине</p>
+                            
+
+                            <div className="info_afganistan">
+                            <img src={afgan} alt=""></img>
+                            <p className="p_afganistan">Что на даный момент происходит в Афганистане</p>
+                        </div>
+
+                        <div className="info_siria">
+                            <img src={siria} alt=""></img>
+                            <p className="p_siria">Гражданская война в Сирии</p>
+                        </div>
+
+                        <div className="info_sudan">
+                            <img src={sudan} alt=""></img>
+                            <p className="p_sudan">О событиях в Судане</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     )
 }
