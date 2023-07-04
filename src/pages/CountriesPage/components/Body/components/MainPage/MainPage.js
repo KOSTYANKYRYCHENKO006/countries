@@ -21,6 +21,7 @@ export const MainPage = () => {
                 <div className="information__header">
                     <h2>Новости про страны</h2>
                 </div>
+                <div className="information__content">
                     <div className="sidebar_container">
                         <div className="infos info_ukraine">
                             <img src={image} alt=""></img>
