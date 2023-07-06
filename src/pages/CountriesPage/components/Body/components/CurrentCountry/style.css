@@ -14,4 +14,39 @@
 }
 .current-country .undo-btn:hover {
   background-color: rgba(240, 248, 255, 0.935);
+}
+
+.name {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  padding-top: 12px;
+}
+
+.flag {
+  width: 100%;
+  display: flex;
+}
+.flag img {
+  width: 190px;
+  height: auto;
+  margin-top: -130px;
+}
+
+.coatOfArms {
+  width: 100%;
+  display: flex;
+  float: left;
+}
+.coatOfArms img {
+  width: 10%;
+  height: auto;
+  margin-left: 210px;
+}
+
+.languages, .continents, .subregion, .timezone, .capital {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-bottom: 25px;
+  margin-top: 20px;
 }/*# sourceMappingURL=style.css.map */
