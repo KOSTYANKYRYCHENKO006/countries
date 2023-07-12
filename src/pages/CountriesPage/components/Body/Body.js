@@ -16,10 +16,6 @@ export const Body = ({ countryList, currentTab }) => {
         // case "aboutUs":
         //     currentTabElement = <AboutUs/>
         // break;
-        // case "contacts":
-        //     currentTabElement = <Contacts/>
-        //     break;
-
         }
 
     return (

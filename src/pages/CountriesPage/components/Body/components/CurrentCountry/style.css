@@ -15,44 +15,53 @@
 .current-country .undo-btn:hover {
   background-color: rgba(240, 248, 255, 0.935);
 }
-
-.name {
+.current-country .name {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 30px;
   padding-top: 12px;
+  margin-bottom: 2.5vh;
 }
-
-.flag {
-  width: 100%;
+.current-country .sides {
   display: flex;
+  justify-content: space-between;
 }
-.flag img {
-  width: 190px;
-  height: auto;
-  margin-top: -130px;
+.current-country .sides .left-side {
+  width: 50%;
 }
-
-.coatOfArms {
-  width: 100%;
+.current-country .sides .left-side .flags {
   display: flex;
-  float: left;
+  height: 25vh;
 }
-.coatOfArms img {
-  width: 10%;
-  height: auto;
-  margin-left: 210px;
+.current-country .sides .left-side .flags .flag {
+  height: 100%;
+  aspect-ratio: 5/3;
 }
-
-.languages, .continents, .subregion, .timezone, .capital {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  margin-bottom: 25px;
-  margin-top: 20px;
+.current-country .sides .left-side .flags .flag img {
+  width: 100%;
+  height: 100%;
 }
-
-.country {
+.current-country .sides .left-side .flags .coatOfArms {
+  margin-left: 5%;
+  height: 100%;
+}
+.current-country .sides .left-side .flags .coatOfArms img {
+  width: 100%;
+  height: 100%;
+}
+.current-country .sides .right-side {
+  width: 40%;
+  background-color: brown;
+}
+.current-country .country {
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 20px;
   font-size: 24px;
+}
+.current-country .borders-country {
+  cursor: pointer;
+  transition: 0.35s;
+}
+.current-country .borders-country:hover {
+  color: chocolate;
 }/*# sourceMappingURL=style.css.map */

@@ -1,19 +1,21 @@
-export function parseObjectToString(languagesObject) {
-    if(typeof languagesObject == 'null' || typeof languagesObject == 'undefined') {
-        return "none"
+export function parseObjectToString(currentObject) {
+
+    if(typeof currentObject === "null"|| typeof currentObject === "undefined") {
+        return "none."
     } 
 
-    let languagesArray = Object.values(languagesObject);
-    let languagesString = "";
+    let currentArray = Object.values(currentObject);
 
-    for(let i = 0; i < languagesArray.length; i++ ) {
-        languagesString += languagesArray[i];
-        if(i == languagesArray.length -1) {
-            languagesString += ".";
+    let currentString = "";
+
+    for(let i = 0; i < currentArray.length; i++ ) {
+        currentString += currentArray[i];
+        if(i === currentArray.length -1) {
+            currentString += ".";
         } else{
-            languagesString += ", "; 
+            currentString += ", "; 
         }
     }
 
-    return(languagesString)
+    return(currentString)
 }

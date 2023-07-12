@@ -15,7 +15,7 @@ export const CountryList = ({ countryList }) => {
             currentModElement = countryList && countryList.map(country => <Country setCurrentMod={setCurrentMod} currentCountry={country} />);
             break;
         default:
-            currentModElement = <CurrentCountry setCurrentMod={setCurrentMod} currentCountry={countryList.filter(country => country?.name?.official == currentMod)[0]} />
+            currentModElement = <CurrentCountry countryList={countryList} setCurrentMod={setCurrentMod} currentCountry={countryList.filter(country => country?.name?.official == currentMod)[0]} />
     }
 
     return (
