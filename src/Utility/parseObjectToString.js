@@ -1,4 +1,8 @@
 export function parseObjectToString(languagesObject) {
+    if(typeof languagesObject == 'null' || typeof languagesObject == 'undefined') {
+        return "none"
+    } 
+
     let languagesArray = Object.values(languagesObject);
     let languagesString = "";
 
