@@ -16,7 +16,14 @@
             background-color: rgba(240, 248, 255, 0.935);
         }
     }
+    
+    .borders{
+        display: flex;
 
+        .borders_items{
+            margin-left: 15px;
+        }
+    }
 
     .name {
         text-align: center;

@@ -1,6 +1,6 @@
 import logo from "../../images/Globe-transformed.png"
 
-import "./style.css"
+import "./style.scss"
 
 export const Title = () => {
     return (
@@ -9,7 +9,7 @@ export const Title = () => {
                 <img className="img" src={logo} alt=""></img>
 
                 <div className="header_info">
-                    <h3 className="countries_header"><a className="title_href" href = "#">Страны</a></h3>
+                    <h3 className="countries_header"><a className="title_href" href = "/countries">Страны</a></h3>
                     <p className="paragrapf_logo">Это веб-сайт про страны</p>
                 </div>
             </div>

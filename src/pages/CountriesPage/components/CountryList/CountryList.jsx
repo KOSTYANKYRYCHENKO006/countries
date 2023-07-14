@@ -2,7 +2,7 @@ import { useState } from "react"
 import { Country } from "./components/Country"
 import { CurrentCountry } from "../CurrentCountry/CurrentCountry"
 
-import "./style.css"
+import "./style.scss"
 
 export const CountryList = ({ countryList }) => {
 
@@ -12,7 +12,7 @@ export const CountryList = ({ countryList }) => {
 
     switch (currentMod) {
         case "all":
-            currentModElement = countryList && countryList.map(country => <Country setCurrentMod={setCurrentMod} currentCountry={country} />);
+            currentModElement = countryList && countryList.map((country, index) => <Country key={index} setCurrentMod={setCurrentMod} currentCountry={country} />);
             break;
         default:
             currentModElement = <CurrentCountry countryList={countryList} setCurrentMod={setCurrentMod} currentCountry={countryList.filter(country => country?.name?.official == currentMod)[0]} />

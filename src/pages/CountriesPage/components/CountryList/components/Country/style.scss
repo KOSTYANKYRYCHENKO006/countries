@@ -1,5 +1,6 @@
 .current-country__wrapper{
     background-color: rgba(0, 0, 0, 0.19);
+    backdrop-filter: blur(5px);
     padding: 5px 10px;
     color: white;
     margin-top: 15px;
@@ -7,9 +8,6 @@
     border: 1px solid red;
     border-radius: 15px;
     
-    .coutry_info{
-        margin-left: 5%;
-    }
     .current-country__name{
         text-align: center;
         cursor: pointer;
@@ -36,22 +34,11 @@
         padding-top: 10px;
     }
 
-    .country_capital{
+    .country_info{
         font-family: Times, serif;
         font-size: 23px;
         padding-top: 6px;
-    }
-
-    .country_area{
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 23px;
-        padding-top: 6px;
-    }
-
-    .country_region{
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 23px;
-        padding-top: 6px;
+        margin-left: 5%;
     }
 
 }

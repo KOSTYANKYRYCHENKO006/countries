@@ -16,7 +16,7 @@ export function parseBordersToString(countryBorders, countryList, setCurrentMod)
         if (i === borders?.length - 1) symbol = ".";
 
         let element = <>
-            <span className="borders-country" onClick={() => setCurrentMod(borders[i])}>
+            <span key={i} className="borders-country" onClick={() => setCurrentMod(borders[i])}>
                 {borders[i]}
             </span>
             {symbol}

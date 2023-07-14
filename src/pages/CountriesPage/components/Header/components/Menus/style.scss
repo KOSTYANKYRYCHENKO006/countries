@@ -3,5 +3,11 @@
     justify-content: space-evenly;
     .menu-tab{
         cursor: pointer;
+
+        a{
+            all:unset;
+            color: white;
+            font-size: 25px;
+        }
     }
 }
