@@ -20,39 +20,39 @@ export const CurrentCountry = ({currentCountry, setCurrentMod}) => {
                 <img src={currentCountry?.flags?.png}></img> 
             </div>
 
-            <div className="country">
+            <div className="infoCountry">
                Capital: {currentCountry?.capital || "none"}
             </div>
 
-            <div className="country">
+            <div className="infoCountry">
                 Languages: {parseObjectToString(currentCountry?.languages)}
             </div>
 
-            <div className="country">
+            <div className="infoCountry">
                 Continent: {currentCountry?.continents}
             </div>
 
-            <div className="country">
+            <div className="infoCountry">
                 Subregion: {currentCountry?.subregion || "none"}
             </div>
 
-            <div className="country">
+            <div className="infoCountry">
                 Timezone: {countriesTimeZone(currentCountry?.timezones)}
             </div>
 
-            <div className="country">
+            <div className="infoCountry">
                 Population: {currentCountry?.population}
             </div>
 
-            <div className="country">
+            <div className="infoCountry">
                 Borders: {currentCountry?.borders}
             </div>
 
-            <div className="country">
+            <div className="infoCountry">
                 Dayoff: {currentCountry?.startOfWeek}
             </div>
 
-            <div className="country">
+            <div className="infoCountry">
                 Area: {currentCountry?.area}
             </div>
         
