@@ -11,15 +11,13 @@ import { CurrentCountry } from "./components/CurrentCountry/CurrentCountry";
 
 export const CountriesPage = () => {
 
-    let isResponse = true;
-
     const [response, setResponse] = useState([]);
 
     const getResponse = () => {
         sendRequest(setResponse)
     }
 
-    useEffect(() => getResponse(), [isResponse])
+    useEffect(() => getResponse(), [])
 
     console.log(response);
 
@@ -32,13 +30,13 @@ export const CountriesPage = () => {
             path: "/countries",
             element: <CountryList countryList={response} />
         },
-        response?.map(country => {
+        ...response?.map(country => {
             return {
-                path:`/countries/${country?.name?.common}`,
-                element:<CurrentCountry currentCountry={country} countryList={response}/>
+                path: `/countries/${country?.name?.common}`,
+                element: <CurrentCountry currentCountry={country} countryList={response} />
             }
         }),
-    
+
         // {
         //     path:"/aboutUs",
         //     element: <AboutUs/>
