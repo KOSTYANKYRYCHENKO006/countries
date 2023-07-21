@@ -1,8 +1,9 @@
+import { parseObjectToString } from "../../../../utility/parseObjectToString"
 import { parseArrayToString } from "../../../../utility/parseArrayToString"
-import{parseBordersToString} from "../../../../Utility/parseBordersToString"
-import {setZoomScale} from "../../../../Utility/setZoomScale"
+import { parseBordersToString } from "../../../../utility/parseBordersToString"
+import { setZoomScale } from "../../../../utility/setZoomScale"
 
-import {GoogleMapCustom} from "../../../../components/GoogleMap/GoogleMapCustom"
+import { GoogleMapCustom } from "../../../../components/GoogleMap/GoogleMapCustom"
 
 import "./style.scss"
 
@@ -69,11 +70,3 @@ export const CurrentCountry = ({ currentCountry, setCurrentMod, countryList }) =
                         </div>
                     </div>
                 </div>
-
-                <div className="right-side">
-                    <GoogleMapCustom currentZoom={setZoomScale(currentCountry?.area)} currentCenter={currentCountry?.latlng} />
-                </div>
-            </div>
-        </div>
-    )
-}
