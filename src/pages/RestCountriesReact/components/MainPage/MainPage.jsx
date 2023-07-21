@@ -14,7 +14,7 @@ export const MainPage = () => {
                     а именно, где ваша страна находиться, ее територия, с какими
                     странами она пересикаеться
                 </h1>
-                <a href="/countries">
+                <a href="/countries/all">
                     <button className="text_btn" type="text" id="Button">На страницу Страны</button>
                 </a>
             </div>

@@ -1,4 +1,4 @@
-import { CountriesPage } from '../pages/CountriesPage';
+import { RestCountriesReact } from '../pages/RestCountriesReact';
 
 import './App.scss';
 
@@ -7,7 +7,7 @@ export function App() {
     <div className="App">
       <div className='App-background'>
         <div className='App-wrapper'>
-          <CountriesPage />
+          <RestCountriesReact />
         </div>
       </div>
     </div>

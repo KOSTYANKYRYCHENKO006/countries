@@ -1,4 +1,4 @@
-.current-country__wrapper{
+.current-country__wrapper {
     background-color: rgba(0, 0, 0, 0.19);
     backdrop-filter: blur(5px);
     padding: 5px 10px;
@@ -7,34 +7,39 @@
     width: 30%;
     border: 1px solid red;
     border-radius: 15px;
-    
-    .current-country__name{
+
+    .current-country__name {
         text-align: center;
         cursor: pointer;
-        &:hover{
+
+        a {
+            all: unset
+        }
+
+        &:hover {
             color: rgb(228, 128, 166)
         }
     }
 
-    .country_flag{
+    .country_flag {
         width: 90%;
         aspect-ratio: 3/2;
         margin: 0 auto;
         padding-top: 8px;
 
-        img{
+        img {
             width: 100%;
             height: 100%;
         }
     }
 
-    .current-country__name{
+    .current-country__name {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 25px;
         padding-top: 10px;
     }
 
-    .country_info{
+    .country_info {
         font-family: Times, serif;
         font-size: 23px;
         padding-top: 6px;

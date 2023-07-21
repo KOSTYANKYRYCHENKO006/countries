@@ -1,6 +1,6 @@
 import { parseCca3ToOfficialName } from "./parseCca3ToOfficialName"
 
-export function parseBordersToString(countryBorders, countryList, setCurrentMod) {
+export function parseBordersToString(countryBorders, countryList) {
 
     if(typeof countryBorders === "null"|| typeof countryBorders === "undefined") {
         return "none."
@@ -16,8 +16,10 @@ export function parseBordersToString(countryBorders, countryList, setCurrentMod)
         if (i === borders?.length - 1) symbol = ".";
 
         let element = <>
-            <span key={i} className="borders-country" onClick={() => setCurrentMod(borders[i])}>
+            <span key={i} className="borders-country">
+                <a key={`a${i}`} href={`/countries/${countryBorders[i]}`}>
                 {borders[i]}
+                </a>
             </span>
             {symbol}
         </>
