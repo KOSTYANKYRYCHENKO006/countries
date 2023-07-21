@@ -2,15 +2,26 @@ import { parseObjectToString } from "../../../../utility/parseObjectToString"
 import { parseArrayToString } from "../../../../utility/parseArrayToString"
 import { parseBordersToString } from "../../../../utility/parseBordersToString"
 import { setZoomScale } from "../../../../utility/setZoomScale"
+import { CountryListContext } from "../../RestCountriesReact"
+
+import { useContext } from "react"
+import { useParams } from "react-router-dom"
 
 import { GoogleMapCustom } from "../../../../components/GoogleMap/GoogleMapCustom"
 
 import "./style.scss"
 
-export const CurrentCountry = ({ currentCountry, setCurrentMod, countryList }) => {
+
+export const CurrentCountry = () => {
+
+    let countryList = useContext(CountryListContext);
+
+    let { currentCountryID } = useParams();
+
+    let currentCountry = countryList.find( country => country?.data?.cca3 === currentCountryID)?.data;
+
     return (
         <div className="current-country">
-            <button className="undo-btn" onClick={() => setCurrentMod("all")}>{"<"}</button>
             <div className="name">
                 {currentCountry?.name?.official}
             </div>
@@ -57,7 +68,7 @@ export const CurrentCountry = ({ currentCountry, setCurrentMod, countryList }) =
                                 Borders:
                             </div>
                             <div className="borders_items">
-                                {parseBordersToString(currentCountry?.borders, countryList, setCurrentMod)}
+                                {parseBordersToString(currentCountry?.borders, countryList)}
                             </div>
                         </div>
 
@@ -70,3 +81,11 @@ export const CurrentCountry = ({ currentCountry, setCurrentMod, countryList }) =
                         </div>
                     </div>
                 </div>
+
+                <div className="right-side">
+                    <GoogleMapCustom currentZoom={setZoomScale(currentCountry?.area)} currentCenter={currentCountry?.latlng} />
+                </div>
+            </div>
+        </div>
+    )
+}
