@@ -1,0 +1,58 @@
+.main-page {
+    height: 76vh;
+}
+
+.logo_text {
+    text-align: center;
+
+    .text {
+        font-family: Arial, Helvetica, sans-serif;
+        padding-top: 12px;
+        width: 80%;
+        margin: 0 auto;
+        color: #fff;
+    }
+
+    .text_btn {
+        margin-top: 15px;
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 20px;
+        background-color: #101010;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .text_btn:hover {
+        background-color: #fff;
+        color: #101010;
+    }
+}
+
+.information {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 80%;
+    height: 60%;
+    background-color: #10101080;
+    color: #fff;
+}
+
+.information__content {
+    display: flex;
+    justify-content: space-evenly;
+
+    .infos{
+        width: 20%;
+    }
+
+    img {
+        width: 100%;
+        aspect-ratio: 5/3;
+        cursor: pointer;
+    }
+}
