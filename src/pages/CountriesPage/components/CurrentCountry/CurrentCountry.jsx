@@ -1,9 +1,8 @@
-import { parseObjectToString } from "../../../../utility/parseObjectToString"
 import { parseArrayToString } from "../../../../utility/parseArrayToString"
-import { parseBordersToString } from "../../../../utility/parseBordersToString"
-import { setZoomScale } from "../../../../utility/setZoomScale"
+import{parseBordersToString} from "../../../../Utility/parseBordersToString"
+import {setZoomScale} from "../../../../Utility/setZoomScale"
 
-import { GoogleMapCustom } from "../../../../components/GoogleMap/GoogleMapCustom"
+import {GoogleMapCustom} from "../../../../components/GoogleMap/GoogleMapCustom"
 
 import "./style.scss"
 
