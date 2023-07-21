@@ -52,7 +52,7 @@ export const CurrentCountry = () => {
                         </div>
 
                         <div>
-                            Subregion: {currentCountry?.subregion || "none."}
+                            Subregion: {currentCountry?.subregion || "-"}
                         </div>
 
                         <div>
