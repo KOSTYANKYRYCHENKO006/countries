@@ -53,7 +53,6 @@ export const RestCountriesReact = () => {
     return (
         <>
             <Header />
-
             <CountryListContext.Provider value={response}>
                 <RouterProvider router={router}></RouterProvider>
             </CountryListContext.Provider>
