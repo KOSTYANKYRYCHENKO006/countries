@@ -7,6 +7,8 @@ export const Search = () => {
                     type="text"
                     placeholder="search_placeholder"
                     className="search_input"
+                    value={searchTerm}
+                    onChange={handlesearch}
                     />
                 </form>
             </div>
