@@ -20,6 +20,17 @@ export const CountryList = () => {
             ?.includes(searchResult?.toLowerCase())
     )
 
+    const [isOpen, setIsOpen] = useState(true)
+
+    const itemClickHandler = (event) => {
+        setValue(event.target.textContent)
+        setIsOpen(!isOpen)
+    }
+
+    const inputClickHandler = () => {
+        setIsOpen(true)
+    }
+
     return (
         <div>
             <Search value={searchResult} setValue={setSearchResult} />
@@ -31,3 +42,18 @@ export const CountryList = () => {
         </div>
     )
 }
+
+<ul className="autocomplete">
+    {
+       value && isOpen?countryList.map((country, index) => {
+            return(
+                <li className="autocomplete_item">
+                    {country.name}
+                    onClick={itemClickHandler}
+                </li>
+            )
+        })
+        :null
+    }
+</ul>
+

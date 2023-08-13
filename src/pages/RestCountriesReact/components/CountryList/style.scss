@@ -4,3 +4,16 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
+.search_form{
+
+    input{
+    width: 23%;
+    font-size: 17px;
+    padding: 10px;
+    background: black;
+    margin-left: 20px;
+    border: 1px solid white;
+    margin-top: 20px;
+    }
+}

@@ -32,10 +32,10 @@ const router = createBrowserRouter([
         ]
     },
 
-    // {
-    //     path:"/aboutUs",
-    //     element: <AboutUs/>
-    // }
+     //{
+        // path:"/aboutUs",
+        // element: <AboutUs/>
+     //}
 ]);
 
 export const RestCountriesReact = () => {
