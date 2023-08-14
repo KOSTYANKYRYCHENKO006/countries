@@ -17,7 +17,7 @@ export function parseBordersToString(countryBorders, countryList) {
 
         let element = <>
             <span key={i} className="borders-country">
-                <a key={`a${i}`} href={`/countries/${countryBorders[i]}`}>
+                <a key={`a${i}`} href={`${countryBorders[i]}`}>
                 {borders[i]}
                 </a>
             </span>

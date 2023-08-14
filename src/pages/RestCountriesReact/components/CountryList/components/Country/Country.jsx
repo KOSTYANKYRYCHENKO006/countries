@@ -4,7 +4,7 @@ export const Country = ({ currentCountry }) => {
     return (
         <div className="current-country__wrapper">
             <div className="current-country__name">
-                <a href={`/countries/${currentCountry.cca3}`}>
+                <a href={`${currentCountry.cca3}`}>
                     {currentCountry.name.official}
                 </a>
             </div>
