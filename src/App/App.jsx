@@ -1,6 +1,5 @@
 import { createBrowserRouter, Navigate, RouterProvider } from "react-router-dom";
 
-
 import { RestCountriesReact } from '../pages/RestCountriesReact';
 import { MainPage } from "../pages/RestCountriesReact/components/MainPage"
 import { CountryList } from "../pages/RestCountriesReact/components/CountryList"
