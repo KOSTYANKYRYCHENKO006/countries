@@ -19,6 +19,7 @@ export const CurrentCountry = () => {
     let { currentCountryID } = useParams();
 
     let currentCountry = countryList.find( country => country?.data?.cca3 === currentCountryID)?.data;
+    console.log(currentCountry)
 
     return (
         <div className="current-country">
