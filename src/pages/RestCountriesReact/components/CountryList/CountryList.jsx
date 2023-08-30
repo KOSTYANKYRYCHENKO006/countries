@@ -15,16 +15,17 @@ export const CountryList = () => {
 
     let countryList = useContext(CountryListContext);
     let [searchResult, setSearchResult] = useState('')
-    let [filterResult, setFilterResult] = useState(filterConstants)
+    // let [filterResult, setFilterResult] = useState(filterConstants)
 
-    let filteredCountryList = setRightFilterResult(filterResult, countryList);
-    filteredCountryList = setRightSearchResult(searchResult, filteredCountryList);
+    let filteredCountryList =  setRightSearchResult(searchResult, countryList);
+    
+    // filteredCountryList = setRightFilterResult(filterResult, countryList);
 
 
     return (
         <div>
             <Search countryList={countryList} value={searchResult} setValue={setSearchResult} />
-            <Filter filtersValue={filterResult} setFiltersValue={setFilterResult} />
+            {/* <Filter filtersValue={filterResult} setFiltersValue={setFilterResult} /> */}
 
             <div className="country-list">
                 {
