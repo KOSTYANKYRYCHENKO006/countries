@@ -14,6 +14,10 @@ const router = createBrowserRouter([
     element: <Navigate to={"/countries/main"} />
   },
   {
+    path: "https://KOSTYANKYRYCHENKO006.github.io/countries",
+    element: <Navigate to={"/countries/main"} />
+  },
+  {
     path: "/countries",
     element: <RestCountriesReact />,
     children: [

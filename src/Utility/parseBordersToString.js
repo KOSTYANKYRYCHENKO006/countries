@@ -1,10 +1,13 @@
+import { Link } from "react-router-dom"
+import {Routes} from "../constants/Routes"
+
 import { parseCca3ToOfficialName } from "./parseCca3ToOfficialName"
 
 export function parseBordersToString(countryBorders, countryList) {
 
-    if(typeof countryBorders === "null"|| typeof countryBorders === "undefined") {
+    if (typeof countryBorders === "null" || typeof countryBorders === "undefined") {
         return "none."
-    } 
+    }
 
     let borders = parseCca3ToOfficialName(countryBorders, countryList);
 
@@ -17,9 +20,9 @@ export function parseBordersToString(countryBorders, countryList) {
 
         let element = <>
             <span key={i} className="borders-country">
-                <a key={`a${i}`} href={`${countryBorders[i]}`}>
-                {borders[i]}
-                </a>
+                <Link key={`a${i}`} to={`${Routes.CurrentCountry(countryBorders[i])}`}>
+                    {borders[i]}
+                </Link>
             </span>
             {symbol}
         </>

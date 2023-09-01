@@ -1,4 +1,25 @@
-.filter-block{
+.filter-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.filter-block {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.514);
+}
+
+.filter-block__unwrapped{
   display: flex;
   justify-content: space-evenly;
+}
+
+.filter-switcher {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  width: fit-content;
+  position: absolute;
+  right: 5px;
+  bottom: 2.5px;
 }

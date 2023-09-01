@@ -1,3 +1,6 @@
+import { Routes } from "../../../../constants/Routes"
+import {Link} from "react-router-dom"
+
 import image from "../../../../images/WarInUkraine.jpg"
 import afgan from "../../../../images/Afganistan.png"
 import siria from "../../../../images/Siria.png"
@@ -14,9 +17,9 @@ export const MainPage = () => {
                     а именно, где ваша страна находиться, ее територия, с какими
                     странами она пересикаеться
                 </h1>
-                <a href="/countries/all">
+                <Link to={Routes.Countries}>
                     <button className="text_btn" type="text" id="Button">На страницу Страны</button>
-                </a>
+                </Link>
             </div>
 
             <div className="information">

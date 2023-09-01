@@ -1,12 +1,15 @@
+import { Link } from "react-router-dom"
+import {Routes} from "../../../../../../constants/Routes"
+
 import "./style.scss"
 
 export const Country = ({ currentCountry }) => {
     return (
         <div className="current-country__wrapper">
             <div className="current-country__name">
-                <a href={`${currentCountry.cca3}`}>
+                <Link to={`${Routes.CurrentCountry(currentCountry.cca3)}`}>
                     {currentCountry.name.official}
-                </a>
+                </Link>
             </div>
             <div className="country_flag">
                 <img src={currentCountry?.flags?.png} alt={currentCountry?.flags?.alt}></img>

@@ -1,28 +1,23 @@
-import { filterConstants } from "../constants/filterConstants";
-
 export const setRightFilterResult = (filterResult, countryList) => {
 
-        let resultCountryList = countryList?.filter(
-            (country) => {
-                let isValid = false;
+    let resultCountryList = countryList?.filter(
+        (country) => {
+            let isValid = false;
 
-                if (country?.data?.independent && filterResult?.Independent?.independent) isValid = true
-                if (!country?.data?.independent && filterResult?.Independent?.dependent) isValid = true
-                if (Object.values(filterResult?.Continents)
-                    ?.filter(
-                        (elem) => elem[1] == true
-                    )
-                    ?.includes(country?.data?.continents)
-                ) isValid = true
+            if (filterResult?.Independent?.independent && country?.data?.independent) isValid = true;
+            else if ((filterResult?.Independent?.dependent && !country?.data?.independent)) isValid = true;
+            else return false
 
-                if (country?.data?.landlocked && filterResult?.Landlocked?.yes) isValid = true
-                if (!country?.data?.landlocked && filterResult?.Landlocked?.no) isValid = true
+            if (filterResult?.Continents[country?.data?.continents[0]]) isValid = true;
+            else return false
 
+            if (filterResult?.Landlocked?.yes && country?.data?.landlocked) isValid = true;
+            else if (filterResult?.Landlocked?.no && !country?.data?.landlocked) isValid = true;
+            else return false
 
-                if (isValid) return true
-                else return false
-            }
-        )
+            return isValid;
+        }
+    )
 
-        return resultCountryList
+    return resultCountryList
 }

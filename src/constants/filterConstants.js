@@ -1,20 +1,18 @@
 export const filterConstants =  {
     Independent: {
-        independent: false,
-        dependent: false
+        independent: true,
+        dependent: true
     },
     Continents: {
-        Europe: false,
-        Oceania: false,
-        "North America": false,
-        "South America": false,
-        Asia: false,
-        Australia: false,
-        Antarctica: false
+        Europe: true,
+        Oceania: true,
+        "North America": true,
+        "South America": true,
+        Asia: true,
+        Antarctica: true
     },
     Landlocked: {
-        yes: false, 
-        no: false
+        yes: true, 
+        no: true
 }
-
 }

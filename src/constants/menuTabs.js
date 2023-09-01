@@ -1,4 +1,6 @@
-export const menuTabs = [["countries/main", "Главная"], ["countries/countries/all", "Страны"], ["countries/aboutUs", "О нас"]];
+import { Routes } from "./Routes";
+
+export const menuTabs = [[Routes.Home, "Главная"], [Routes.Countries, "Страны"], [Routes.AboutUs, "О нас"]];
 
 
 

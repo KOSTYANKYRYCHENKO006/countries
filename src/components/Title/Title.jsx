@@ -1,11 +1,14 @@
 import { useContext, useState } from "react";
+import { Link } from "react-router-dom";
 
 import { setRightSearchResult } from "../../utility/setRightSearchResult"
 import { CountryListContext } from "../../pages/RestCountriesReact/RestCountriesReact";
+import { Routes } from "../../constants/Routes";
 
 import logo from "../../images/Globe-transformed.png"
 
 import "./style.scss"
+
 
 export const Title = () => {
 
@@ -18,9 +21,10 @@ export const Title = () => {
         <div className="wrapper">
             <div className="logo_img">
                 <img className="img" src={logo} alt=""></img>
-
                 <div className="header_info">
-                    <h3 className="countries_header"><a className="title_href" href="/countries/all">Страны</a></h3>
+                    <h3 className="countries_header">
+                        <Link className="title_href" to={Routes.Countries}>Страны</Link>
+                        </h3>
                     <p className="paragrapf_logo">Это веб-сайт про страны</p>
                 </div>
             </div>
