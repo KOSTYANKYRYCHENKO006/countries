@@ -5,13 +5,21 @@
 }
 
 .filter-block {
-  display: none;
+  transition: .25s;
+  height: 0px;
   background-color: rgba(0, 0, 0, 0.514);
+  .filter{
+    display: none
+  }
 }
 
 .filter-block__unwrapped{
+  height: 200px;
   display: flex;
   justify-content: space-evenly;
+  .filter{
+    display: block
+  }
 }
 
 .filter-switcher {

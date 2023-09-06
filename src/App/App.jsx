@@ -10,11 +10,7 @@ import './App.scss';
 
 const router = createBrowserRouter([
   {
-    path: "",
-    element: <Navigate to={"/countries/main"} />
-  },
-  {
-    path: "https://KOSTYANKYRYCHENKO006.github.io/countries",
+    path: "/countries",
     element: <Navigate to={"/countries/main"} />
   },
   {

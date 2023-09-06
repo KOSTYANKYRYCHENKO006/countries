@@ -1,13 +1,23 @@
-.menu-tabs__container{
-    display: flex;
-    justify-content: space-evenly;
-    .menu-tab{
-        cursor: pointer;
+@media (min-width: 1300px) {
 
-        a{
-            all:unset;
-            color: white;
-            font-size: 25px;
+    .menu-tabs__container {
+        display: flex;
+        justify-content: space-evenly;
+
+        .menu-tab {
+            cursor: pointer;
+
+            a {
+                all: unset;
+                color: white;
+                font-size: 25px;
+            }
         }
+    }
+}
+
+@media (max-width: 1299px) {
+    .menu-tabs__container {
+        display: none;
     }
 }

@@ -1,5 +1,6 @@
 import { Title } from "../../../../components/Title"
-import { Menus } from "./components/Menus/Menus"
+import { DropDownMenu } from "./components/DropDownMenu"
+import { Menus } from "./components/Menus"
 
 import "./style.scss"
 
@@ -8,6 +9,7 @@ export const Header = () => {
         <>
             <Title />
             <Menus />
+            <DropDownMenu />
         </>
     )
 }
