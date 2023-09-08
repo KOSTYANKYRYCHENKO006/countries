@@ -1,8 +1,9 @@
 .main-page {
-    height: 76vh;
+    min-height: 76vh;
 }
 
 .logo_text {
+    padding-top: 50px;
     text-align: center;
 
     .text {
@@ -37,7 +38,7 @@
     margin: 0 auto;
     margin-top: 30px;
     width: 80%;
-    height: 60%;
+    min-height: 60%;
     background-color: #10101080;
     color: #fff;
 }

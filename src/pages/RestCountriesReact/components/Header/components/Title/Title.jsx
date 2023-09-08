@@ -1,11 +1,11 @@
 import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 
-import { setRightSearchResult } from "../../utility/setRightSearchResult"
-import { CountryListContext } from "../../pages/RestCountriesReact/RestCountriesReact";
-import { Routes } from "../../constants/Routes";
+import { setRightSearchResult } from "../../../../../../utility/setRightSearchResult"
+import { CountryListContext } from "../../../../RestCountriesReact";
+import { Routes } from "../../../../../../constants/Routes";
 
-import logo from "../../images/Globe-transformed.png"
+import logo from "../../../../../../images/Globe-transformed.png"
 
 import "./style.scss"
 

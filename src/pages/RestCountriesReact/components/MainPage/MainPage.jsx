@@ -13,9 +13,9 @@ export const MainPage = () => {
     return (
         <div className="main-page">
             <div className="logo_text">
-                <h1 className="text">Добро пожаловать на наш сайт, сдесь вы можете найти информацыю про страны,
-                    а именно, где ваша страна находиться, ее територия, с какими
-                    странами она пересикаеться
+                <h1 className="text">Добро пожаловать на наш сайт, здесь вы можете найти информацию про страны,
+                    а именно, где ваша страна находится, ее территория, с какими
+                    странами она пересекается
                 </h1>
                 <Link to={Routes.Countries}>
                     <button className="text_btn" type="text" id="Button">На страницу Страны</button>

@@ -21,11 +21,12 @@ export const RestCountriesReact = () => {
     console.log(response);
 
     return (
-        <>
+        <div className="rest-countries-react">
+            <Header />
+
             <CountryListContext.Provider value={response}>
-                <Header />
                 <Outlet />
             </CountryListContext.Provider>
-        </>
+        </div>
     )
 }

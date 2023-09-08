@@ -1,7 +1,7 @@
 @media (max-width: 1299px) {
     .drop-down-menu__container {
+        position: sticky;
         display: block;
-        position: fixed;
         z-index: 10;
         top: 0;
         left: 0;
@@ -15,9 +15,11 @@
         }
 
         .menu-tabs {
+            transform: translate(-100%);
             transition: .15s;
             position: absolute;
-            z-index: 11;
+            left: 0;
+            top: 0;
             padding-top: 50px;
             height: 100vh;
             width: 50vw;
@@ -36,10 +38,6 @@
                 }
             }
         }
-    }
-
-    .drop-down-hidden {
-        transform: translate(-100%);
     }
 }
 
